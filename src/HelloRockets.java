@@ -41,9 +41,10 @@ public class HelloRockets {
 	}
 	
 	private static void Draw2Verticals() {
-		DrawVertical();
-		System.out.print(" ");
-		DrawVertical();
+		for(int i = 0; i < 2; i++) {
+			DrawVertical();	
+			System.out.print(" ");
+		}
 		System.out.println();
 	}
 	private static void Draw2Centers() {
