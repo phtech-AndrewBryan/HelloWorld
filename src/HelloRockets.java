@@ -62,7 +62,7 @@ public class HelloRockets {
 		
 	}
 	
-	public static void main(String[] args) {
+	public static void TwoRockets() {
 		Draw2Cones();
 		Draw2Centers();
 		Draw2Cones();
