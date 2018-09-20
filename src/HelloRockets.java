@@ -34,9 +34,10 @@ public class HelloRockets {
 	}
 	
 	private static void Draw2Horizontals() {
-		DrawHorizontal();
-		System.out.print(" ");
-		DrawHorizontal();
+		for(int i = 0; i < 2; i++) {
+			DrawHorizontal();	
+			System.out.print(" ");
+		}
 		System.out.println();
 	}
 	
@@ -47,20 +48,17 @@ public class HelloRockets {
 		}
 		System.out.println();
 	}
+	public static void Draw2Boxes() {
+		Draw2Horizontals();
+		Draw2Verticals();
+		Draw2Verticals();
+		Draw2Horizontals();
+	}
 	private static void Draw2Centers() {
-		Draw2Horizontals();
-		Draw2Verticals();
-		Draw2Verticals();
-		Draw2Horizontals();
-		
+		Draw2Boxes();
 		System.out.println("|United| |United|");
 		System.out.println("|States| |States|");
-		
-		Draw2Horizontals();
-		Draw2Verticals();
-		Draw2Verticals();
-		Draw2Horizontals();
-		
+		Draw2Boxes();
 	}
 	
 	public static void TwoRockets() {
